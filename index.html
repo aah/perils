@@ -1,50 +1,615 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Epigrams in Programming</h1>
+          Alan Perlis
+        </section>
+        <section>
+          <section><img src="perlis.jpg" style="float: left; margin-right: 10px">
+            <p style="margin-top: 75px; margin-left: 15px"><strong>Alan
+                <s>Perils</s> Perlis</strong> (April 1, 1922)
+            </p>
+            <p>American computer scientist who helped develop ALGOL.
+            </p>
+          </section>
+          <section>
+            ALGOL begat C begat ...
+          </section>
+          <section>
+            <img src="perl.jpg" style="border: none; box-shadow: none;">
+          </section>
+          <section>
+            <img src="larry-wall.jpg" style="border: none; box-shadow: none;">
+          </section>
+          <section>
+            <img src="circle.gif" style="border: none; box-shadow: none;">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Epigrams in Programming</h2>
+          </section>
+          <section>
+            <p>Published in 1982</p>
+            <img src="sigplan.png" style="border: none; box-shadow: none">
+            <p><small>in the journal of the Association for Computing Machinery's<br>Special Interest Group on
+                Programming Languages.</small></p>
+          </section>
+          <section>
+            Perlis was 60.
+          </section>
+          <section>
+            Published nearly a century after Wilde's "Phrases and Philosophies for the
+            Use of the Young."
+          </section>
+          <section><img src="wilde.jpg" style="float: left; margin-right: 10px;
+            max-height: 280px">
+            <p style="margin-top: 115px; margin-left: 15px"><strong>Oscar
+                Wilde</strong> (October 16, 1854)
+              <small>"I can resist everything but temptation."</small>
+            </p>
+          </section>
+          <section>
+            "Epigrams" includes a direct citation of Wilde.
+          </section>
+          <section>
+            Wilde:
+            <blockquote>A cynic knows the price of everything and the value of nothing.</blockquote>
+          </section>
+          <section>
+            Perlis:
+            <blockquote>A LISP programmer knows the value of everything but the cost of nothing.</blockquote>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Wilde or Perlis?</h1>
+          </section>
+          <section>
+            <p>Industry is the root of all ugliness.</p>
+          </section>
+          <section>
+            Time is a waste of money.
+          </section>
+          <section>
+            There is a fatality about all good resolutions. They are invariably made too soon.
+          </section>
+          <section>
+            A truth ceases to be true when more than one person believes in it.
+          </section>
+          <section>
+            <p>The well-bred contradict other people. The wise contradict
+              themselves.</p>
+          </section>
+          <section>
+            Those who read the symbol do so at their peril.
+          </section>
+        </section>
+        <section>
+          <h1>The Epigrams</h1>
+        </section>
+        <section>
+          1. One man's constant is another man's variable.
+        </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <section>
+          2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
+        </section>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+        <section>
+          3. Syntactic sugar causes cancer of the semicolon.
+        </section>
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+        <section>
+          4. Every program is a part of some other program and rarely fits.
+        </section>
+
+        <section>
+          5. If a program manipulates a large amount of data, it does so in a small number of ways.
+        </section>
+
+        <section>
+          6. Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere.
+        </section>
+
+        <section>
+          7. It is easier to write an incorrect program than understand a correct one.
+        </section>
+
+        <section>
+          8. A programming language is low level when its programs require attention to the irrelevant.
+        </section>
+
+        <section>
+          9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
+        </section>
+
+        <section>
+          10. Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary.
+        </section>
+
+        <section>
+          11. If you have a procedure with ten parameters, you probably missed some.
+        </section>
+
+        <section>
+          12. Recursion is the root of computation since it trades description for time.
+        </section>
+
+        <section>
+          13. If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.
+        </section>
+
+        <section>
+          14. In the long run every program becomes rococo - then rubble.
+        </section>
+
+        <section>
+          15. Everything should be built top-down, except the first time.
+        </section>
+
+        <section>
+          16. Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
+        </section>
+
+        <section>
+          17. If a listener nods his head when you're explaining your program, wake him up.
+        </section>
+
+        <section>
+          18. A program without a loop and a structured variable isn't worth writing.
+        </section>
+
+        <section>
+          19. A language that doesn't affect the way you think about programming, is not worth knowing.
+        </section>
+
+        <section>
+          20. Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication.
+        </section>
+
+        <section>
+          21. Optimization hinders evolution.
+        </section>
+
+        <section>
+          22. A good system can't have a weak command language.
+        </section>
+
+        <section>
+          23. To understand a program you must become both the machine and the program.
+        </section>
+
+        <section>
+          24. Perhaps if we wrote programs from childhood on, as adults we'd be able to read them.
+        </section>
+
+        <section>
+          25. One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely.
+        </section>
+
+        <section>
+          26. There will always be things we wish to say in our programs that in all known languages can only be said poorly.
+        </section>
+
+        <section>
+          27. Once you understand how to write a program get someone else to write it.
+        </section>
+
+        <section>
+          28. Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long?
+        </section>
+
+        <section>
+          29. For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node.
+        </section>
+
+        <section>
+          30. In programming, everything we do is a special case of something more general -- and often we know it too quickly.
+        </section>
+
+        <section>
+          31. Simplicity does not precede complexity, but follows it.
+        </section>
+
+        <section>
+          32. Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.
+        </section>
+
+        <section>
+          33. The eleventh commandment was "Thou Shalt Compute" or "Thou Shalt Not Compute" - I forget which.
+        </section>
+
+        <section>
+          34. The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information.
+        </section>
+
+        <section>
+          35. Everyone can be taught to sculpt: Michelangelo would have had to be taught not to. So it is with great programmers.
+        </section>
+
+        <section>
+          36. The use of a program to prove the 4-color theorem will not change mathematics - it merely demonstrates that the theorem, a challenge for a century, is probably not important to mathematics.
+        </section>
+
+        <section>
+          37. The most important computer is the one that rages in our skulls and ever seeks that satisfactory external emulator. The standarization of real computers would be a disaster - and so it probably won't happen.
+        </section>
+
+        <section>
+          38. Structured Programming supports the law of the excluded middle.
+        </section>
+
+        <section>
+          39. Re graphics: A picture is worth 10K words - but only those to describe the picture. Hardly any sets of 10K words can be adequately described with pictures.
+        </section>
+
+        <section>
+          40. There are two ways to write error-free programs; only the third one works.
+        </section>
+
+        <section>
+          41. Some programming languages manage to absorb change, but withstand progress.
+        </section>
+
+        <section>
+          42. You can measure a programmer's perspective by noting his attitude on the continuing vitality of FORTRAN.
+        </section>
+
+        <section>
+          43. In software systems, it is often the early bird that makes the worm.
+        </section>
+
+        <section>
+          44. Sometimes I think the only universal in the computing field is the fetch-execute cycle.
+        </section>
+
+        <section>
+          45. The goal of computation is the emulation of our synthetic abilities, not the understanding of our analytic ones.
+        </section>
+
+        <section>
+          46. Like punning, programming is a play on words.
+        </section>
+
+        <section>
+          47. As Will Rogers would have said, "There is no such thing as a free variable."
+        </section>
+
+        <section>
+          48. The best book on programming for the layman is "Alice in Wonderland"; but that's because it's the best book on anything for the layman.
+        </section>
+
+        <section>
+          49. Giving up on assembly language was the apple in our Garden of Eden: Languages whose use squanders machine cycles are sinful. The LISP machine now permits LISP programmers to abandon bra and fig-leaf.
+        </section>
+
+        <section>
+          50. When we understand knowledge-based systems, it will be as before -- except our fingertips will have been singed.
+        </section>
+
+        <section>
+          51. Bringing computers into the home won't change either one, but may revitalize the corner saloon.
+        </section>
+
+        <section>
+          52. Systems have sub-systems and sub-systems have sub- systems and so on ad infinitum - which is why we're always starting over.
+        </section>
+
+        <section>
+          53. So many good ideas are never heard from again once they embark in a voyage on the semantic gulf.
+        </section>
+
+        <section>
+          54. Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy.
+        </section>
+
+        <section>
+          55. A LISP programmer knows the value of everything, but the cost of nothing.
+        </section>
+
+        <section>
+          56. Software is under a constant tension. Being symbolic it is arbitrarily perfectible; but also it is arbitrarily changeable.
+        </section>
+
+        <section>
+          57. It is easier to change the specification to fit the program than vice versa.
+        </section>
+
+        <section>
+          58. Fools ignore complexity. Pragmatists suffer it. Some can avoid it.  Geniuses remove it.
+        </section>
+
+        <section>
+          59. In English every word can be verbed. Would that it were so in our programming languages.
+        </section>
+
+        <section>
+          60. In seeking the unattainable, simplicity  only  gets  in the way.
+        </section>
+
+        <section>
+          61. In programming, as in everything else, to be in error is to be reborn.
+        </section>
+
+        <section>
+          62. In computing, invariants are ephemeral.
+        </section>
+
+        <section>
+          63. When we write programs that "learn", it turns  out  that we do and they don't.
+        </section>
+
+        <section>
+          64. Often it is the  means  that  justify  the  ends:  Goals advance  technique  and  technique  survives  even when goal structures crumble.
+        </section>
+
+        <section>
+          65. Make no mistake about it: Computers  process  numbers  - not  symbols.  We measure our understanding (and control) by the extent to which we can arithmetize an activity.
+        </section>
+
+        <section>
+          66. Making something variable is easy. Controlling  duration of constancy is the trick.
+        </section>
+
+        <section>
+          67. Think of all the psychic energy expended  in  seeking  a fundamental distinction between "algorithm" and "program".
+        </section>
+
+        <section>
+          68. If we believe in data structures,  we  must  believe  in independent  (hence  simultaneous)  processing. For why else would we  collect  items  within  a  structure?  Why  do  we tolerate languages that give us the one without the other?
+        </section>
+
+        <section>
+          69. In a  5  year  period  we  get  one  superb  programming language.  Only we can't control when the 5 year period will be.
+        </section>
+
+        <section>
+          70. Over the centuries the Indians developed  sign  language for  communicating  phenomena  of interest. Programmers from different tribes (FORTRAN, LISP, ALGOL, SNOBOL, etc.)  could use  one  that doesn't require them to carry a blackboard on their ponies.
+        </section>
+
+        <section>
+          71. Documentation  is  like  term  insurance:  It  satisfies because  almost  no  one who subscribes to it depends on its benefits.
+        </section>
+
+        <section>
+          72. An adequate bootstrap is a contradiction in terms.
+        </section>
+
+        <section>
+          73. It is not a language's weakness but its  strengths  that control  the  gradient of its change: Alas, a language never escapes its embryonic sac.
+        </section>
+
+        <section>
+          74. Is it possible that software is not like anything  else, that it is meant to be discarded: that the whole point is to see it as a soap bubble?
+        </section>
+
+        <section>
+          75. Because of its vitality, the computing field  is  always in  desperate  need  of  new  cliches:  Banality soothes our nerves.
+        </section>
+
+        <section>
+          76. It is the user who should parameterize  procedures,  not their creators.
+        </section>
+
+        <section>
+          77.  The  cybernetic  exchange  between  man,  computer  and algorithm  is  like  a  game  of musical chairs: The frantic search for balance always leaves one of the  three  standing ill at ease.
+        </section>
+
+        <section>
+          78. If your computer speaks English, it was probably made in Japan.
+        </section>
+
+        <section>
+          79. A year spent in artificial  intelligence  is  enough  to make one believe in God.
+        </section>
+
+        <section>
+          80. Prolonged contact with the computer turns mathematicians into clerks and vice versa.
+        </section>
+
+        <section>
+          81. In computing, turning the obvious into the useful  is  a living definition of the word "frustration".
+        </section>
+
+        <section>
+          82. We are on the verge: Today our program  proved  Fermat's next-to-last theorem.
+        </section>
+
+        <section>
+          83. What is the difference between a Turing machine and  the modern  computer?   It's  the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak.
+        </section>
+
+        <section>
+          84. Motto for a research laboratory: What we work on  today, others will first think of tomorrow.
+        </section>
+
+        <section>
+          85. Though the Chinese should adore APL, it's  FORTRAN  they put their money on.
+        </section>
+
+        <section>
+          86. We kid ourselves if we think that the ratio of procedure to   data   in  an  active  data-base  system  can  be  made arbitrarily small or even kept small.
+        </section>
+
+        <section>
+          87. We have  the  mini  and  the  micro  computer.  In  what semantic niche would the pico computer fall?
+        </section>
+
+        <section>
+          88. It is not the computer's fault that Maxwell's  equations are not adequate to design the electric motor.
+        </section>
+
+        <section>
+          89. One does not learn computing by using a hand calculator, but one can forget arithmetic.
+        </section>
+
+        <section>
+          90. Computation has made the tree flower.
+        </section>
+
+        <section>
+          91. The computer reminds one of Lon  Chaney  --  it  is  the machine of a thousand faces.
+        </section>
+
+        <section>
+          92. The computer is the ultimate  polluter:  its  feces  are indistinguish- able from the food it produces.
+        </section>
+
+        <section>
+          93. When someone says "I  want  a  programming  language  in which  I  need  only  say  what  I  wish  done,"  give him a lollipop.
+        </section>
+
+        <section>
+          94.  Interfaces  keep  things  tidy,  but  don't  accelerate growth: Functions do.
+        </section>
+
+        <section>
+          95. Don't have good  ideas  if  you  aren't  willing  to  be responsible for them.
+        </section>
+
+        <section>
+          96. Computers don't introduce order anywhere as much as they expose opportunities.
+        </section>
+
+        <section>
+          97. When a professor insists computer science is X  but  not Y, have compassion for his graduate students.
+        </section>
+
+        <section>
+          98. In computing, the mean time  to  failure  keeps  getting shorter.
+        </section>
+
+        <section>
+          99. In man-machine symbiosis, it is man who must adjust: The machines can't.
+        </section>
+
+        <section>
+          100. We will never run out of things to program as  long  as there is a single program around.
+        </section>
+
+        <section>
+          101. Dealing with failure is easy:  Work  hard  to  improve. Success  is  also  easy  to  handle: You've solved the wrong problem. Work hard to improve.
+        </section>
+
+        <section>
+          102. One can't proceed from the informal to  the  formal  by formal means.
+        </section>
+
+        <section>
+          103. Purely applicative languages are poorly applicable.
+        </section>
+
+        <section>
+          104. The proof of a system's value is its existence.
+        </section>
+
+        <section>
+          105. You can't communicate complexity, only an awareness  of it.
+        </section>
+
+        <section>
+          106. It's difficult  to  extract  sense  from  strings,  but they're the only communication coin we can count on.
+        </section>
+
+        <section>
+          107. The debate rages on: is PL/I Bachtrian or Dromedary?
+        </section>
+
+        <section>
+          108.  Whenever  two  programmers  meet  to  criticize  their programs, both are silent.
+        </section>
+
+        <section>
+          109. Think of it! With VLSI we can pack 100 ENIACS in 1  sq. cm.
+        </section>
+
+        <section>
+          110. Editing is a rewording activity.
+        </section>
+
+        <section>
+          111. Why did the Roman Empire collapse? What  is  Latin  for office automation?
+        </section>
+
+        <section>
+          112. Computer Science is embarrassed by the computer.
+        </section>
+
+        <section>
+          113. The only constructive  theory  connecting  neuroscience and psychology will arise from the study of software.
+        </section>
+
+        <section>
+          114. Within a computer natural language is unnatural.
+        </section>
+
+        <section>
+          115. Most people find the concept  of  programming  obvious, but the doing impossible.
+        </section>
+
+        <section>
+          116. You think you know when you can learn,  are  more  sure when  you  can  write,  even  more  when  you can teach, but certain when you can program.
+        </section>
+
+        <section>
+          117. It goes against the grain of modern education to  teach children  to  program.  What  fun  is there in making plans, acquiring  discipline  in  organizing   thoughts,   devoting attention to detail and learning to be self-critical?
+        </section>
+
+        <section>
+          118. If you can imagine a society  in  which  the  computer- robot is the only menial, you can imagine anything.
+        </section>
+
+        <section>
+          119. Programming is an unnatural act.
+        </section>
+
+        <section>
+          120. Adapting old programs to fit new machines usually means adapting new machines to behave like old ones.
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      history: true,
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/notes/notes.js', async: true },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+    });
+    </script>
+  </body>
 </html>
