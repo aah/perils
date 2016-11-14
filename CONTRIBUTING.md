@@ -13,7 +13,7 @@ When reporting a bug make sure to include information about which browser and op
 
 ### Pull Requests
 - Should follow the coding style of the file you work in, most importantly:
-  - Tabs to indent
+  - Tabs to indent?
   - Single-quoted strings
 - Should be made towards the **dev branch**
 - Should be submitted from a feature/topic branch (not your master)
